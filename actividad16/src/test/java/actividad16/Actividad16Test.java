@@ -25,8 +25,6 @@ Adiós", ejecutarMain().trim());
         } finally {
             System.setOut(original);
         }
-        return buffer.toString().replace("
-", "
-");
+        return buffer.toString().replace("\r\n", "\n");
     }
 }

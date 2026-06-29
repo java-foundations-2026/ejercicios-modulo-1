@@ -24,8 +24,6 @@ public class Actividad02Test {
         } finally {
             System.setOut(original);
         }
-        return buffer.toString().replace("
-", "
-");
+        return buffer.toString().replace("\r\n", "\n");
     }
 }
